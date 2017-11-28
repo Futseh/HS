@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 n = 10000
 I = 9503
-bkg = 207
+bkg = 149
 sp = 25 * 10**(-3)
 sm = 600 * 10**(-3)
 
@@ -41,6 +41,7 @@ for i in range(len(xp)):
         bol = False
 
 plt.plot(xp, stp)
+plt.grid()
 plt.xlabel("Distanse under bakken [m]")
 plt.ylabel("Stråling [Sv]")
 plt.show()
